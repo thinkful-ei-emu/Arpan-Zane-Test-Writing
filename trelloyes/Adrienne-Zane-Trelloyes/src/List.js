@@ -3,7 +3,7 @@ import Card from './Card.js';
 import STORE from './store.js';
 
 export default function List(props) {
-  const individualCards = props.cards.map((card) => (
+   const individualCards = props.cards.map((card) => (
     <Card key={card.id} title={card.title} content={card.content} />
   ));
   console.log(individualCards);
